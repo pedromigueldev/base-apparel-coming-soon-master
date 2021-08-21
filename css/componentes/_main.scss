@@ -1,0 +1,111 @@
+.container{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    &__img{
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+        object-position: center top;
+    }
+    &__conteudo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__titulo{
+        width: 100%;
+        padding: 45px 0px 15px 0px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 1;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        text-align: center;
+        &--sub{
+            font-weight: 300;
+            color: var(--desaturated-red);
+        }
+
+    }
+    &__informacao{
+        color: var(--desaturated-red);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0px 15px 20px 15px;
+        max-width: 400px;
+
+    }
+    &__form{
+        position: relative;
+    }
+    &__email{
+        border-radius: 25px;
+        border: 1px solid var(--desaturated-red-plc);
+        padding: 15px;
+        &:focus{
+            outline: none;
+        }
+        &--error{
+            border: 1px solid var(--soft-red);
+            display: inline-block;
+        }
+        &::placeholder{
+            color: var(--desaturated-red-plc);
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+        }
+    }
+    &__email__img{
+        display: none;
+        position: absolute;
+        object-fit: scale-down; 
+        transform: translateY(50%);
+        right: 35%;
+        &--active{
+            display: inline-block;
+        }
+    }
+    &__enviar{
+        position: absolute;
+        width: 70px;
+        height: 100%;
+        transform: translateX(-70px);
+        border-radius: 25px;
+        border: none;
+        background-image: var(--gradiente-dois);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 6px 9px 15px var(--desaturated-red);
+        &:hover{
+            transform: translateX(-60px);
+            transition: all 0.2s ease-in-out;
+        }
+        
+    }
+    &__enviar__img{
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
+    .container__warnin{
+        display: none;
+        color: var(--desaturated-red);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 13px;
+        padding: 15px;
+        max-width: 400px;
+        width: 7    0%;
+        &--active{
+            display: inline-block;
+        }
+    }
+}
