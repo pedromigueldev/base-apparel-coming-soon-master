@@ -3,6 +3,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 10% 45% 45%;
+        grid-template-rows: 15% auto;
         justify-items: inherit;
         align-items: center;
         grid-template-areas:
