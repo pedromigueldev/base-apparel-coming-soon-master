@@ -1,4 +1,4 @@
-@media(min-width: 650px){
+@media(min-width: 40.625rem){
     body{
         width: 100%;
         display: grid;
@@ -10,7 +10,7 @@
         " . navbar img"
         " . main img"
         ". . img";
-        gap: 1rem;
+        gap: 16px;
         background-image: url("../images/bg-pattern-desktop.svg");
         background-position: left;
         background-repeat: no-repeat;
@@ -18,9 +18,9 @@
     }
     .navegacao{
             grid-area: 1 / -3;
-            padding: 35px 0;
+            padding: 2.1875rem 0;
             &__img{
-                width: 140px;
+                width: 8.75rem;
             }
         }
     .container{
@@ -31,10 +31,10 @@
         &__titulo{
             text-align: left;
             text-align: left;
-            font-size: 50px;
+            font-size: 3.125rem;
             font-weight: 600;
             line-height: 1.2;
-            letter-spacing: 10px;
+            letter-spacing: 0.625rem;
             &--sub{
                 font-weight: 300;
                 color: var(--desaturated-red);
@@ -42,7 +42,7 @@
     
         }
         &__informacao{
-            padding: 0 0 15px 0;
+            padding: 0 0 0.9375rem 0;
             line-height: 2;
             text-align: left;
     
@@ -54,7 +54,7 @@
         &__email{
             width: 100%;
             &--error{
-                border: 1px solid var(--soft-red);
+                border: 0.0625rem solid var(--soft-red);
             }
         }
         &__email__img{

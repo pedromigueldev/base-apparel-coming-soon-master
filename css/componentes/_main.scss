@@ -6,7 +6,7 @@
     flex-direction: column-reverse;
     &__img{
         width: 100%;
-        height: 190px;
+        height: 11.875rem;
         object-fit: cover;
         object-position: center top;
     }
@@ -18,12 +18,12 @@
     }
     &__titulo{
         width: 100%;
-        padding: 45px 0px 15px 0px;
+        padding: 2.8125rem 0rem 0.9375rem 0rem;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
-        font-size: 35px;
+        font-size: 2.1875rem;
         line-height: 1;
-        letter-spacing: 8px;
+        letter-spacing: 0.5rem;
         text-transform: uppercase;
         text-align: center;
         &--sub{
@@ -36,32 +36,32 @@
         color: var(--desaturated-red);
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 0.8125rem;
         line-height: 1.5;
         text-align: center;
-        padding: 0px 15px 20px 15px;
-        max-width: 400px;
+        padding: 0rem 0.9375rem 1.25rem 0.9375rem;
+        max-width: 25rem;
 
     }
     &__form{
         position: relative;
     }
     &__email{
-        border-radius: 25px;
-        border: 1px solid var(--desaturated-red-plc);
-        padding: 15px;
+        border-radius: 1.5625rem;
+        border: 0.0625rem solid var(--desaturated-red-plc);
+        padding: 0.9375rem;
         &:focus{
             outline: none;
         }
         &--error{
-            border: 1px solid var(--soft-red);
+            border: 0.0625rem solid var(--soft-red);
             display: inline-block;
         }
         &::placeholder{
             color: var(--desaturated-red-plc);
             font-family: 'Josefin Sans', sans-serif;
             font-weight: 400;
-            font-size: 13px;
+            font-size: 0.8125rem;
         }
     }
     &__email__img{
@@ -76,17 +76,17 @@
     }
     &__enviar{
         position: absolute;
-        width: 70px;
+        width: 4.375rem;
         height: 100%;
-        transform: translateX(-70px);
-        border-radius: 25px;
+        transform: translateX(-4.375rem);
+        border-radius: 1.5625rem;
         border: none;
         background-image: var(--gradiente-dois);
         cursor: pointer;
         transition: all 0.2s ease-in-out;
-        box-shadow: 6px 9px 15px var(--desaturated-red);
+        box-shadow: 0.375rem 0.5625rem 0.9375rem var(--desaturated-red);
         &:hover{
-            transform: translateX(-60px);
+            transform: translateX(-3.75rem);
             transition: all 0.2s ease-in-out;
         }
         
@@ -100,9 +100,9 @@
         display: none;
         color: var(--desaturated-red);
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 13px;
-        padding: 15px;
-        max-width: 400px;
+        font-size: 0.8125rem;
+        padding: 0.9375rem;
+        max-width: 25rem;
         width: 7    0%;
         &--active{
             display: inline-block;
